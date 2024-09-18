@@ -1,18 +1,25 @@
 //best practice using const
 //export means the helloMsg is able to be imported
 const helloMsg = (element, msg) => {
-    element.innerHTML = 'Click Me'
-    element.addEventListener('click', () => alert(msg))
+    element.text('Click Me')
+    element.click(() =>{
+        alert(msg)
+        element.text('Clicked')
+    })
 }
 
 const goodbyeMsg = (element) => {
-    element.innerHTML = 'Goodbye'
-    element.addEventListener('click', () => alert('So Long, My Friend'))
+    element.text('Good Bye')
+    element.click(() => {
+        alert('So long my friend')
+    })
 }
 
 const defautlMsg = (element, msg) => {
-    element.innerHTML = 'This is default'
-    element.addEventListener('click', () => alert(msg))
+    element.text('Default')
+    element.click(() => {
+        alert(msg)
+    })
 }
 
 export default defautlMsg

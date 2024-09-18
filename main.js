@@ -4,8 +4,9 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 //./helloMsg.js means the helloMsg can be detected
 import defautlMsg, { helloMsg, goodbyeMsg } from './helloMsg.js'
+import $ from "jquery"
 
-document.querySelector('#app').innerHTML = `
+$("#app").html(`
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
@@ -30,9 +31,12 @@ document.querySelector('#app').innerHTML = `
       Click on the Vite logo to learn more
     </p>
   </div>
-`
+`)
 
-setupCounter(document.querySelector('#counter'))
-helloMsg(document.querySelector('#greeting_button'), 'Hello World')
-goodbyeMsg(document.querySelector('#goodbye_button'))
-defautlMsg(document.querySelector('#default_button'), 'This is default')
+//setupCounter(document.querySelector('#counter'))
+setupCounter($('#counter'))
+
+//this is using jquery 
+helloMsg($('#greeting_button'), 'Hello World')
+goodbyeMsg($('#goodbye_button'))
+defautlMsg($('#default_button'), 'This is default')
