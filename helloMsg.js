@@ -1,10 +1,12 @@
 //best practice using const
 //export means the helloMsg is able to be imported
 const helloMsg = (element, msg) => {
-    element.text('Click Me')
+    let isClicked = false
+    element.text( isClicked ? 'Unclick Me' : 'Click Me')
     element.click(() =>{
-        alert(msg)
-        element.text('Clicked')
+        alert(msg + ' ' + (isClicked ? 'Unclicked' : 'Clicked'))
+        isClicked = !isClicked
+        element.text( isClicked ? 'Unclick Me' : 'Click Me')
     })
 }
 

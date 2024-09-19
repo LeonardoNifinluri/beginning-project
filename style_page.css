@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'bloody';
+	src: url(fonts/Creepster-Regular.ttf);
+}
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.card{
+  width: 600px;
+  height: 250px;
+  background-color: red;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.myBtn{
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size: 30px;
+  font-family: 'bloody';
+  cursor: pointer;
+}
+.cardText{
+  font-family: 'bloody';
+  font-size: 50px;
+}
