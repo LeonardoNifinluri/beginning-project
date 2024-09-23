@@ -3,7 +3,7 @@
 	src: url(fonts/Creepster-Regular.ttf);
 }
 body{
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,16 +12,16 @@ body{
 .card{
   width: 600px;
   height: 250px;
-  background-color: red;
+  background-color: black;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
 }
 .myBtn{
-  background-color: red;
-  border: 2px solid black;
+  background-color: black;
+  border: 2px solid red;
   border-radius: 10px;
-  color: black;
+  color: red;
   font-size: 30px;
   font-family: 'bloody';
   cursor: pointer;
@@ -29,4 +29,5 @@ body{
 .cardText{
   font-family: 'bloody';
   font-size: 50px;
+  color: red;
 }
